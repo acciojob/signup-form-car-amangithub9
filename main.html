@@ -7,68 +7,48 @@
 </head>
 
 <body>
-	<body>
-	<form id="my-form" method="post">
-        <div>
-            <label for="name">1. Name</label>
-            <input type="text" id="name" placeholder="Name" required>
-        </div>
+	<form action="#" method="post">
+		<label for="name">Name*</label>
+		<input type="text" id="name" placeholder="Name" required> <br>
 
-        <div>
-            <label for="email">2. Email</label>
-            <input type="email" id="email" placeholder="Email" required>
-        </div>
+		<label for="email">Email*</label>
+		<input type="email" id="email" placeholder="Email" required> <br>
 
-        <div>
-            <!-- <label for="gender">Gender</label> -->
+		<label for="gender">Gender*</label>
+		<input type="radio" name="gender" id="gender_m" required> 
+		<label for="gender_m">Male</label>
+		<input type="radio" name="gender" id="gender_f" required> 
+		<label for="gender_f">Female</label> <br>
 
-            <label for="gender_m">3. M</label>
-            <input type="radio" id="gender_m" name="gender" required>
-            <label for="gender_f">F</label>
-            <input type="radio" id="gender_f" name="gender" required>
-        </div>
+		<label for="cars">Car Brands* </label>
+		<select name="cars" id="cars" required>
+			<option value="" disabled selected>--Please choose an option--</option>
+			<option value="bmw">BMW</option>
+			<option value="audi">Audi</option>
+			<option value="mercedez">Mercedez</option>
+		</select> <br>
 
+		<label for="age">Age*</label>
+		<input type="number" name="" id="age" placeholder="Age" required> <br>
 
-        <div>
-            <label for="cars">4. Choose your Car</label>
-            <select name="cars" id="cars" required>
-                <option value="" disabled selected>--Please choose an option--</option>
-                <option>BMW</option>
-                <option>Audi</option>
-                <option>Mercedez</option>
-                <!-- <option>Mustang</option>
-                <option>Mitsubishi</option>
-                <option>Bugati</option>
-                <option>Lembo</option> -->
-            </select>
-        </div>
-        <div>
-            <lable class="age">5. Age</lable>
-            <input type="number" id="age" placeholder="Age" min="0" required>
-        </div>
-        <div>
-            <lable class="dob">6. DOB</lable>
-            <input type="date" id="dob" required>
-        </div>
-        <div>
-            <lable class="tel">7. Phone Number</lable>
-            <input type="tel" name="tel" id="tel" pattern="xxx-xxx-xxxx" required>
-        </div>
-        <div>
-            <lable class="password">Password</lable>
-            <input type="password" id="password" placeholder="Password" required>
-        </div>
-        <div>
-            <lable class="tos"></lable>
-            <input type="checkbox" name="tos" id="tos"> <b>I agree to the TOS.</b>
-        </div>
-        <div>
-            <button class="submit">Submit</button>
-        </div>
-    </form>
+		<label for="dob">DOB*</label>
+		<input type="date" id="dob" required> <br>
+
+		<label for="tel">Phone Number</label>
+		<input type="tel" id="tel" placeholder="xxx-xxx-xxxx"> <br>
+
+		<label for="password">Password*</label>
+		<input type="password" name="password" id="password" placeholder="Password" required> <br>
+
+		<label for="tos">I agree to the TOS</label>
+		<input type="checkbox" name="" id="tos" required> <br>
+
+		<input type="submit" value="Submit">
+
+	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
-</script>
+    </script>
 
 </body>
 
