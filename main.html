@@ -7,30 +7,32 @@
 </head>
 
 <body>
-	 <form id="my-form" method="post">
+	<body>
+	<form id="my-form" method="post">
         <div>
-            <label for="name">Name</label>
-            <input type="text" id="#name" required>
+            <label for="name">1. Name</label>
+            <input type="text" id="name" placeholder="Name" required>
         </div>
 
         <div>
-            <label for="email">Email</label>
-            <input type="email" id="#email" required>
+            <label for="email">2. Email</label>
+            <input type="email" id="email" placeholder="Email" required>
         </div>
 
         <div>
-            <label for="gender">Gender</label>
+            <!-- <label for="gender">Gender</label> -->
 
-              <label for="gender_m">Male</label>
-			  <input type="radio" id="gender_m" name="gender" required>
-			  <label for="gender_f">Female</label>
-			  <input type="radio" id="gender_f" name="gender" required>
+            <label for="gender_m">3. M</label>
+            <input type="radio" id="gender_m" name="gender" required>
+            <label for="gender_f">F</label>
+            <input type="radio" id="gender_f" name="gender" required>
         </div>
 
 
         <div>
-            <label for="cars">Car Brand</label>
-            <select name="car brand" id="#cars" required>
+            <label for="cars">4. Choose your Car</label>
+            <select name="cars" id="cars" required>
+                <option value="" disabled selected>--Please choose an option--</option>
                 <option>BMW</option>
                 <option>Audi</option>
                 <option>Mercedez</option>
@@ -41,26 +43,28 @@
             </select>
         </div>
         <div>
-            <lable class="age">Age</lable>
-            <input type="number" id="#age" min="0" required>
+            <lable class="age">5. Age</lable>
+            <input type="number" id="age" placeholder="Age" min="0" required>
         </div>
         <div>
-            <lable class="dob">DOB</lable>
-            <input type="date" id="#dob" required>
+            <lable class="dob">6. DOB</lable>
+            <input type="date" id="dob" required>
         </div>
         <div>
-            <lable class="tel">Phone Number</lable>
-            <input type="tel" id="#tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <lable class="tel">7. Phone Number</lable>
+            <input type="tel" name="tel" id="tel" pattern="xxx-xxx-xxxx" required>
         </div>
         <div>
             <lable class="password">Password</lable>
-            <input type="password" id="#password" required>
+            <input type="password" id="password" placeholder="Password" required>
         </div>
         <div>
-            <lable class="checkbox">I agree to the TOS</lable>
-            <input type="checkbox" id="#tos">
+            <lable class="tos"></lable>
+            <input type="checkbox" name="tos" id="tos"> <b>I agree to the TOS.</b>
         </div>
-        <button class="submit">Submit</button>
+        <div>
+            <button class="submit">Submit</button>
+        </div>
     </form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
